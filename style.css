@@ -1,0 +1,596 @@
+body {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.topbar {
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+}
+
+.righticons {
+    margin: 4px 150px;
+
+}
+
+.lefticons {
+    margin: 4px 300px;
+}
+
+.righticons div a,
+span {
+    color: white;
+}
+
+.lefticons img {
+    margin: 2px 4px;
+}
+
+.navcontainer {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item1 {
+    margin: 10px 10px 0px 299px;
+}
+
+.item3 {
+    margin: 10px 275px 0px 10px;
+}
+
+.container2 {
+    font-size: 26px;
+    margin: auto;
+    display: block;
+    width: 980px;
+    padding: 0px 0px 0px 100px;
+}
+
+.container2 a {
+    padding: 7px;
+    color: black;
+
+}
+
+.container2 a:hover,
+a.active {
+    background-color: rgb(238, 198, 22);
+    color: white;
+    text-decoration: none;
+}
+.container2::after{
+    background-image: url("../f.website/icons/shadow.svg");
+    
+}
+
+.container3 {
+    width: auto;
+    display: flex;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container2::after {
+    background-image: url("../html and css/shadow.svg");
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+.intro1 {
+    margin: 208px 2px 2px 2px;
+    text-align: left;
+    width: 602px;
+    height: 390px;
+}
+
+.intro1 h2 strong {
+    color: rgb(238, 198, 22);
+}
+
+.intro2 {
+    margin: 50px 156px 0px 0px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.but1 {
+    background-color: rgb(238, 198, 22);
+    color: white;
+}
+
+.but2 {
+    background-color: navy;
+    color: white;
+}
+
+.but2:hover {
+    background-color: rgb(79, 79, 219);
+}
+
+section>h2 {
+    text-align: center;
+    color: black;
+    padding: 7px 3px;
+}
+
+section::after {
+    content: "";
+    background-image: url("../f.website/icons/topafter.svg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    background-color: black;
+    color: white;
+    border: red;
+    position: absolute;
+    left: 1rem;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-item {
+    margin: 2px 2px;
+    padding: 2px 2px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.carousel-control-next {
+    background-color: black;
+    color: white;
+    border: yellow;
+    position: absolute;
+    right: 1rem;
+    justify-items: center;
+}
+
+.carousel-slide {
+    display: flex;
+    position: relative;
+    margin: 10px;
+}
+
+.but3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+}
+
+.but3:hover {
+    background-color: white;
+    color: bisque;
+}
+
+.about1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    width: 550px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px;
+
+}
+
+.block3 {
+    background-color: rgb(223, 219, 219);
+}
+
+.about {
+    background-color: white;
+}
+
+#carouselExampleControls {
+    margin: 0px;
+}
+
+.but4 {
+    margin: 50px 0px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+
+.but4:hover {
+    background-color: white;
+    color: black;
+}
+
+.block4 {
+    background-color: rgb(223, 219, 219);
+
+}
+
+.block4a {
+    margin: 10px 10px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.block4aa h2 p {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block4aa {
+    margin: 50px 40px;
+    padding: 20px 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+.block4aa h2 strong {
+    color: rgb(238, 198, 22);
+}
+
+.rm {
+    background-color: black;
+    color: white;
+}
+
+.rm:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: rgb(238, 198, 22);
+    color: white;
+}
+
+.active:hover {
+    background-color: white;
+    color: rgb(238, 198, 22);
+}
+
+section>h2>strong {
+    color: white;
+}
+
+.block5 {
+    background-color: rgba(35,43,56,0.8);
+
+    padding: 80px;
+    
+   
+}
+
+.block5a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b5aa {
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 198, 22);
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    font-size: large;
+    border-radius: 1rem;
+}
+
+.block6 {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+
+}
+
+.block6a {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 72px 300px;
+    border-radius: 1rem;
+
+}
+
+.block6aa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    background-color: white;
+
+}
+
+.block6aa::after{
+    background-image: url("../icons/shadow2.svg");
+}
+.but6 {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 6%;
+}
+
+.but6:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.block7 {
+    background-color: rgb(238, 198, 22);
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ .block7 .input-wrap{
+    background-color: white;
+    padding: 1rem;
+    width: 660px;
+ }
+ .block7 .input-wrap input{
+    
+    width: 500px;
+    border: none;
+    height: 40px;
+    padding: 0 1rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+
+ .but7 {
+    background-color: rgb(238, 198, 22);
+    color: white;
+    padding: 0.8rem 2rem;
+   position: absolute;
+  
+}
+
+.but7:hover {
+    background-color: black;
+    color: white;
+}
+
+.block8 {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+.b8a>div {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.b8a {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 436px;
+    justify-content: center;
+}
+
+.b8b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    height: 454px;
+    width: 530px;
+}
+footer{
+    background-color: #2d333f;
+    height: 400px;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box{
+    margin: 10px;
+    color: white;
+    text-align: center;
+    width: 259px;
+    height: 200px;
+}
+.box p{
+    text-align: center;
+}
+.but8{
+    background-color:rgb(94, 94, 143) ;
+    color: white;
+     border-radius: 3% ;
+    width: 100px;
+    height: 35px;
+   
+}
+.but8:hover{
+    background-color:white ;
+    color: rgb(94, 94, 143);
+}
+
+
+.container .box li{
+    text-align:center;
+    list-style-type:none;
+    margin: 14px;
+}
+ .box li a{
+    color: white;
+}
+hr{
+   
+    height: 1px;
+    border: none;
+}
+.insta{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.insta1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../f.website/img - Copy/GROCERY.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.parent{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.child{
+    margin: 30px 10px;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+
+}
+.child div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child .rating img{
+    
+    width: 15px;
+    height: 15px;
+}
+    
+
+.child img{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+.child button{
+    background-color: white;
+    border:0.5px solid rgb(238, 198, 22);
+    padding:0.5px;
+   
+}
+.child button img{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(238, 198, 22);
+    padding: 1px;
+    margin: 1px;
+}
+.child button span{
+    background-color: white;
+    color: black;
+    font-size: medium;
+    margin: 1px;
+}
+.child button span:hover{
+    background-color: rgb(238, 198, 22);
+    color: black;
+}
+#leftarrow,#rightarrow{
+    margin: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+}
+.but9{
+    background-color: rgb(238, 198, 22);
+    border: none;
+    color: white;
+}
+.copyright{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    background-color: #262a33;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.copyright a{
+    color:rgb(238, 198, 22) ;
+}

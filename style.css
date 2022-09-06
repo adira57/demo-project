@@ -2,6 +2,111 @@ body {
     font-family: 'Alumni Sans Collegiate One', sans-serif;
     font-family: 'DynaPuff', cursive;
     font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.topnav .responsivelogo{
+    display: none;
+
+}
+.topnav a.icon{
+    display: none;
+}
+
+.toppestbar {
+    display: flex;
+    background-color: black;
+  }
+
+  .toppestbar a {
+    margin: 4px;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+
+  }
+
+  .item2 {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .topnav a {
+    margin: 5px;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(238, 198, 22);
+    color: white;
+  }
+
+  .topnav a.active {
+    background-color: rgb(238, 198, 22);
+    color: white;
+  }
+
+ 
+
+  .topbar .lefticons {
+    display: flex;
+    margin: 2px;
+    background-color: rgb(64, 64, 141);
+    flex-direction: row;
+
+
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(64, 64, 141);
+  }
+
+  .topbar .righticons a {
+    color: white;
+
+  }
+
+  .topbar .lefticons a {
+    margin: 5px;
+  }
+
+  .topbar .righticons {
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    color: #f2f2f2;
+    background-color: rgb(64, 64, 141);
+
+  }
+
+
+
+
+.topbar1  {
+    display:none;  
+
+}
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .topbar {
@@ -17,6 +122,7 @@ body {
 
 .lefticons {
     margin: 4px 300px;
+   
 }
 
 .righticons div a,
@@ -68,7 +174,7 @@ a.active {
     
 }
 
-.container3 {
+.logointro1{
     width: auto;
     display: flex;
     background-image: url("../img/hero.png");
@@ -203,10 +309,12 @@ section::after {
     display: flex;
     justify-content: center;
     margin: 0px 100px;
+    width: 550px;
+    height: 550px;
 
 }
 
-.block3 {
+.top-products {
     background-color: rgb(223, 219, 219);
 }
 
@@ -231,12 +339,12 @@ section::after {
     color: black;
 }
 
-.block4 {
+.services {
     background-color: rgb(223, 219, 219);
 
 }
 
-.block4a {
+.services-a {
     margin: 10px 10px;
     padding: 5px 5px;
     display: flex;
@@ -246,7 +354,7 @@ section::after {
     align-items: center;
 }
 
-.block4aa h2 p {
+.services-a-a h2 p {
 
     display: flex;
     text-align: center;
@@ -255,7 +363,7 @@ section::after {
 
 }
 
-.block4aa {
+.services-a-a {
     margin: 50px 40px;
     padding: 20px 10px;
     background-color: white;
@@ -264,7 +372,7 @@ section::after {
 }
 
 
-.block4aa h2 strong {
+.services-a-a h2 strong {
     color: rgb(238, 198, 22);
 }
 
@@ -292,7 +400,7 @@ section>h2>strong {
     color: white;
 }
 
-.block5 {
+.timer {
     background-color: rgba(35,43,56,0.8);
 
     padding: 80px;
@@ -300,13 +408,13 @@ section>h2>strong {
    
 }
 
-.block5a {
+.timer-a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.b5aa {
+.timer-a-a {
     border: 1px solid black;
     display: flex;
     text-align: center;
@@ -321,14 +429,14 @@ section>h2>strong {
     border-radius: 1rem;
 }
 
-.block6 {
+.blog {
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
 
 }
 
-.block6a {
+.blog-a {
     display: flex;
     justify-content: space-evenly;
     margin: 72px 300px;
@@ -336,7 +444,7 @@ section>h2>strong {
 
 }
 
-.block6aa {
+.blog-a-a {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -347,7 +455,7 @@ section>h2>strong {
 
 }
 
-.block6aa::after{
+.blog-a-a::after{
     background-image: url("../icons/shadow2.svg");
 }
 .but6 {
@@ -365,7 +473,7 @@ section>h2>strong {
 
 }
 
-.block7 {
+.newsletter {
     background-color: rgb(238, 198, 22);
     display: flex;
     justify-items: center;
@@ -373,27 +481,31 @@ section>h2>strong {
     align-items: center;
 
 }
- .block7 .input-wrap{
+ .newsletter .input-wrap{
     background-color: white;
     padding: 1rem;
-    width: 660px;
+    width: 550px;
+   
  }
- .block7 .input-wrap input{
+ .newsletter .input-wrap input{
     
-    width: 500px;
+    width: 400px;
     border: none;
     height: 40px;
     padding: 0 1rem;
     font-size: 2rem;
     position: relative;
 }
+.newsletter img{
+    width: 700px;
+    height: 500px;
+}
 
-
- .but7 {
+   .but7 {
     background-color: rgb(238, 198, 22);
     color: white;
     padding: 0.8rem 2rem;
-   position: absolute;
+   position: relative;
   
 }
 
@@ -402,7 +514,7 @@ section>h2>strong {
     color: white;
 }
 
-.block8 {
+.contact {
     width: 100vw;
     height: 600px;
     display: flex;
@@ -412,14 +524,14 @@ section>h2>strong {
 
 }
 
-.b8a>div {
+.contact-a>div {
     display: block;
     justify-content: center;
     text-align: center;
     margin: 10px;
 }
 
-.b8a {
+.contact-a {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -427,19 +539,18 @@ section>h2>strong {
     justify-content: center;
 }
 
-.b8b {
+.contact-b {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 100px;
-    height: 454px;
-    width: 530px;
+  
+    
 }
 footer{
     background-color: #2d333f;
     height: 400px;
 }
-footer .container{
+footer .information1{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -470,7 +581,7 @@ footer .container{
 }
 
 
-.container .box li{
+.information1 .box li{
     text-align:center;
     list-style-type:none;
     margin: 14px;
@@ -593,4 +704,160 @@ hr{
 }
 .copyright a{
     color:rgb(238, 198, 22) ;
+}
+
+
+@media screen and (max-width:1560px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+    .topnav a {
+        display: none;
+      }
+    
+      .topbar .lefticons .righticons{
+        display: none;
+      }
+    
+      .topnav a.icon {
+        position: relative;
+        float: left;
+        display: block;
+      }
+    
+      .items2 ,.i1,.i2,.i3{
+        display: none;
+      }
+      .topnav a.icon{
+        display: flex;
+        text-align: center;
+       float: left;
+      }
+      .topnav.responsive {
+        position: relative;
+      }
+    
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    .topbar1 {
+        display: block;
+        border: 1px solid red;
+        position: absolute;
+    }
+    
+    
+    .topbar >.lefticons,.righticons {
+        display: none;
+        
+    }
+    
+     nav .navcontainer {
+        display: none;
+    }
+    
+    nav .container2 {
+        display: none;
+    
+    }
+    
+    .logointro1 {
+        display: flex;
+    }
+    
+    .logointro1 .intro2 {
+        display: none;
+    }
+    
+    .logointro1 .intro1 {
+        align-items: center;
+        font-size: 10px;
+    }
+    
+    .about1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about1 .image {
+        display: inline;
+        justify-content: center;
+        overflow: hidden;
+        width: 731px;
+        height: 387px;
+    }
+    
+    .about1 .text {
+        display: none;
+    }
+    
+    .services-a {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timer-a {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .blog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .blog-a {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .newsletter div img {
+        width: 250px;
+        height: 250px;
+    
+    }
+    
+    .contact {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .information1 {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    
 }

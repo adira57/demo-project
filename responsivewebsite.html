@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+  <link rel="stylesheet" media="screen and (max-width:1560px)" href="phone.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,8 @@
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=DynaPuff&family=Josefin+Sans&display=swap"
     rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
     var left = 1;
@@ -31,15 +33,13 @@
         document.getElementById("c" + left).style.display = "none";
         left += 1;
         right += 1;
-        for (i <= left; i <= right; i++) {
+        for (i = left; i <= right; i++) {
           document.getElementById("c" + i).style.display = "inline-block";
 
         }
       }
       else
         return;
-
-
 
     }
     function moveright() {
@@ -51,40 +51,105 @@
           document.getElementById("c" + i).style.display = "inline-block";
 
         }
-
       }
       else {
         return;
       }
+    }
+  </script>
 
+  <script>
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
 
+
   </script>
+<style>
+  
+  @media screen and (max-width: 1560px) {
+    .topnav a {
+      display: none;
+    }
+
+    .topbar {
+      display: none;
+    }
+    .responsivelogo.responsive{
+      display:inline-block;
+    }
+
+    .topnav a.icon {
+      position: relative;
+      display: block;
+      
+      
+    }
+
+    .items2 ,.i1,.i2,.i3{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1560px) {
+    .topnav{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+   
+  
+    .topnav a.icon {
+        display: flex;
+        text-align: center;
+       float: left;
+       left: -30%;
+    }
+    
+
+    
+    .topnav.responsive {
+      position: relative;
+      margin: 20px;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      left: 60%;
+    background-color: #fff;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      font-size: 3rem;
+    }
+  }
+  
+</style>
+
+
 
 </head>
 
 <body onload="show()">
 
   <div class="topbar">
-
     <div class="lefticons">
-
-      <a href="#">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\facebook.svg" width="10px" heigth="10px">
-      </a>
-      <a href="#">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\twitter.svg" width="20px" height="20px">
-      </a>
-      <a href="#">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\google.svg" width="20px" height="20px">
-      </a>
-      <a href="#">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\instagram.svg" width="20px" height="20px">
-      </a>
-      <a href="#">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\search.svg" width="20px" height="20px">
-      </a>
-
+      <a href=""><img src="../f.website/icons/facebook.svg" width="30px" height="30px"></a>
+      <a href=""><img src="../f.website/icons/twitter.svg" width="30px" height="30px"></a>
+      <a href=""><img src="../f.website/icons/instagram.svg" width="30px" height="30px"></a>
+      <a href=""><img src="../f.website/icons/google.svg" width="30px" height="30px"></a>
     </div>
 
     <div class="righticons">
@@ -98,46 +163,53 @@
           href="#">0items-($0.00)</a>
 
       </div>
-
     </div>
-
   </div>
-  <nav>
-    <div class="navcontainer">
-      <div class=" item1">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\phone.svg" width="20px" height="20px"> <strong>Call
-          Us:(+91-1234567890)</strong>
-        <p>E-mail:responsive@gmail.com</p>
 
-      </div>
-      <div class="item2">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\logo.svg" width="200px" height="100px">
-      </div>
-      <div class=" item3">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\clock.svg" width="20px" height="20px"> <strong>Working
-          Hours:</strong>
-        <p>Mon-Sat(8.00am-12.00pm)</p>
-      </div>
-
+  <div class="item2">
+    <div class="i1">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\icons\phone.svg" width="20px" height="20px"> <strong>Call
+        Us:(+91-1234567890)</strong>
+      <p>E-mail:responsive@gmail.com</p>
     </div>
-    <div class="container2">
-      <a href="#" class="active">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Products</a>
-      <a href="#">Blog</a>
-      <a href="#">Shop</a>
-      <a href="#">Services</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact Us</a>
+    <div class="i2 ">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\icons\logo.svg" width="200px" height="100px">
     </div>
-  </nav>
+    <div class="i3">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\icons\clock.svg" width="20px" height="20px"> <strong>Working
+        Hours:</strong>
+      <p>Mon-Sat(8.00am-12.00pm)</p>
+    </div>
+  </div>
 
-  <div class="container3">
+  <div class="topnav" id="myTopnav">
+    <a class="responsivelogo">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\icons\logo.svg" width="200px" height="200px">
+    </a>
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#about">Services</a>
+    <a href="#about">Blog</a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars">
+       <img src="../f.website/img - Copy/Hamburger_icon.png" width="40px" height="40px">
+      </i>
+    </a>
+  </div>
+
+
+
+  <div class="logointro1">
     <div class="intro1">
       Welcome to <img src="C:\Users\AditiSharma\Desktop\f.website\icons\logo2.svg">
       <h2>THE WORLD'S BEST <strong>SHOPPING</strong> WEBSITE</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam harum tempore aliquam minus atque dolore
-        ullam velit sapiente autem asperiores sunt id quisquam ducimus veritatis, ipsum ipsa sint iure excepturi cumque
+        ullam velit sapiente autem asperiores sunt id quisquam ducimus veritatis, ipsum ipsa sint iure excepturi
+        cumque
         alias!</p>
       <button class="but1">Read more</button> <button class="but2">Shop Now</button>
 
@@ -146,12 +218,12 @@
       <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\straw.png">
     </div>
   </div>
-  <div class="block3">
+
+
+  <div class="top-products">
     <section>
       <h2>Top products</h2>
     </section>
-
-
 
     <div>
       <div class="parent">
@@ -171,8 +243,8 @@
           <p>1.22$</p>
           <div>
             <button tabindex="0">
-            <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-            <span>ADD TO CART</span>
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+              <span>ADD TO CART</span>
           </div>
         </div>
         <div class="child" id="c2">
@@ -188,8 +260,8 @@
           <p>1.20$</p>
           <div>
             <button tabindex="0">
-            <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-            <span>ADD TO CART</span>
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+              <span>ADD TO CART</span>
           </div>
         </div>
         <div class="child" id="c3">
@@ -205,12 +277,12 @@
           </div>
           <p>1.25$</p>
           <div>
-          <button tabindex="0">
-          <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-          <span>ADD TO CART</span>
-        </div>
+            <button tabindex="0">
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+              <span>ADD TO CART</span>
+          </div>
           </button>
-          
+
 
         </div>
         <div class="child" id="c4">
@@ -226,8 +298,8 @@
           <p>1.27$</p>
           <div>
             <button tabindex="0">
-            <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-            <span>ADD TO CART</span>
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+              <span>ADD TO CART</span>
           </div>
         </div>
         <div class="child" id="c5">
@@ -243,8 +315,8 @@
           <p>1.26$</p>
           <div>
             <button tabindex="0">
-            <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-            <span>ADD TO CART</span>
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+              <span>ADD TO CART</span>
           </div>
         </div>
         <div class="child" id="c6">
@@ -260,9 +332,9 @@
           <p>1.23$</p>
           <div>
             <button tabindex="0">
-            <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
-           
-            <span>ADD TO CART</span>
+              <img src="../f.website/icons/cart2.svg" width="2px" height="2px">
+
+              <span>ADD TO CART</span>
           </div>
         </div>
         <div id="rightarrow">
@@ -272,19 +344,19 @@
 
     </div>
 
-
-
-
-
     <button class="but3" type="button">View More</button>
   </div>
+
+
+
+
   <div class="about">
     <section>
       <H2>ABOUT FRESH MEAL</H2>
     </section>
     <div class="about1">
       <div class="image">
-        <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\yogurt.png" width="550px" height="550px">
+        <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\yogurt.png">
       </div>
       <div class="text">
         <h2><strong>This a long established fact that a reader will be distracted</strong></h2>
@@ -293,64 +365,68 @@
         laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore voluptas eius ea
         recusandae molestiae dolorem sit dolorum. Perferendis voluptates impedit, est cumque maiores, qui, iste porro
         similique enim vero consectetur laudantium!
-        <button class="but4">Read More</button>
+
       </div>
+      <button class="but4">Read More</button>
 
     </div>
   </div>
-  <div class="block4">
+  <div class="services">
     <section>
       <h2>Our Services</h2>
     </section>
-    <div class="block4a">
-      <div class="block4aa">
+    <div class="services-a">
+      <div class="services-a-a">
         <img src="../f.website/icons/transport.svg">
         <h2>Free Home Delivery</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi provident fuga quisquam tenetur
-          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat nesciunt
+          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat
+          nesciunt
           laborum animi repellendus recusandae vitae?</p>
         <button class="rm">Read More</button>
 
       </div>
-      <div class="block4aa">
+      <div class="services-a-a">
         <img src="../f.website/icons/bag.svg">
         <h2><strong>30days Return services</strong></h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi provident fuga quisquam tenetur
-          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat nesciunt
+          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat
+          nesciunt
           laborum animi repellendus recusandae vitae?</p>
         <button class="rm active">Read More</button>
 
       </div>
-      <div class="block4aa">
+      <div class="services-a-a">
         <img src="../f.website/icons/usd.svg">
         <h2>Money back gauranteed</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi provident fuga quisquam tenetur
-          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat nesciunt
+          reiciendis! Vero, ratione. Accusantium obcaecati quaerat ab at, esse, reiciendis, culpa labore fugiat
+          nesciunt
           laborum animi repellendus recusandae vitae?</p>
         <button class="rm">Read More</button>
       </div>
     </div>
   </div>
   <div class="parallax">
-    <div class="block5 ">
+    <div class="timer">
 
       <section>
         <h2><strong>Big Deals of the Week</strong></h2>
       </section>
-      <div class="block5a">
-        <div class="b5aa">
+      <div class="timer-a">
+        <div class="timer-a-a">
           <span>02</span>
           <span>Days</span>
         </div>
-        <div class="b5aa">
+        <div class="timer-a-a">
           <span>23</span>
           <span>Hours</span>
         </div>
-        <div class="b5aa">
+        <div class="timer-a-a">
           <span>23</span>
           <span>min</span>
         </div>
-        <div class="b5aa">
+        <div class="timer-a-a">
           <span>58</span>
           <span>sec</span>
         </div>
@@ -358,18 +434,19 @@
       </div>
     </div>
   </div>
-  <div class="block6">
+  <div class="blog">
     <section>
       <h2>Latest News From Blog</h2>
     </section>
-    <div class="block6a">
-      <div class="block6aa">
+    <div class="blog-a">
+      <div class="blog-a-a">
         <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\donut.jpg" width="500px" height="300px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ducimus et, eos, quae odit dicta laborum
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ducimus et, eos, quae odit dicta
+          laborum
           perferendis nam animi minus, distinctio ea excepturi nulla asperiores ullam veniam quo similique
           Exercitationem aliquid beatae, nesciunt quia nemo modi dolorem ipsam!</p>
       </div>
-      <div class="block6aa">
+      <div class="blog-a-a">
         <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\coffee.jpg" width="500px" height="300px">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit accusamus commodi aliquid,
           distinctio possimus dolorem cupiditate laboriosam, qui impedit voluptatem! Quisquam libero ratione mollitia
@@ -379,37 +456,41 @@
     <button class="but6">View All</button>
   </div>
 
-  <div class="block7">
+  <div class="newsletter">
     <div>
-      <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\rasberry.png" width="700px" height="500px">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\rasberry.png">
     </div>
-    <div>
+    <div class="description">
       <h2>Subscribe to your newsletter</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur animi, earum asperiores unde doloremque
-        atque enim placeat excepturi laboriosam temporibus voluptate doloribus qui, molestias eum incidunt odio dolorum
+        atque enim placeat excepturi laboriosam temporibus voluptate doloribus qui, molestias eum incidunt odio
+        dolorum
         nemo expedita ab modi molestiae nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
         provident vitae expedita excepturi eaque, commodi autem illum ipsum officiis eligendi officia pariatur libero
         magni fugit, quo nisi neque, voluptatem cupiditate rerum quis dicta accusantium?</p>
       <div class="input-wrap">
-        <input type="email" placeholder="email@fresh.com">
-        <button class="but7">Subscribe</button>
+        <input type="email" placeholder="email@fresh.com"> <button class="but7">Subscribe</button>
+
       </div>
+
+
     </div>
   </div>
 
-  <div class="block8">
-    <div class="b8a">
+
+  <div class="contact">
+    <div class="contact-a">
       <div>
         <section>
           <h2>CONTACT US</h2>
-        </section>icons/
+        </section>
       </div>
       <div>
         <img src="C:\Users\AditiSharma\Desktop\f.website\icons\phone2.svg" width="20px" height="20px"> <strong>Call
           Us:(+91-1234567890)</strong>
       </div>
       <div>
-        <img src="C:\Users\AditiSharma\Desktop\f.website\icons\bag3.svg" width="20px" height="20px">
+
         <strong>e-mail:abcd@freshmail.com </strong>
       </div>
       <div>
@@ -418,20 +499,14 @@
       </div>
 
     </div>
-    <div class="b8b">
-      MAP
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem deleniti iste magni nobis molestias, laborum
-      consequatur sapiente quidem repellat dolore, alias quisquam reiciendis animi tenetur, delectus suscipit totam quia
-      quam offici Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, perspiciatis saepe illum natus
-      nobis est magnam qui corrupti inventore eos quas modi harum! Asperiores sed assumenda nostrum laborum amet at
-      atque saepe alias sequi!
+    <div class="contact-b">
+      <img src="C:\Users\AditiSharma\Desktop\f.website\img - Copy\coffee.jpg" width="200px" height="200px">
     </div>
   </div>
 
   <footer>
 
-    <div class="container">
-
+    <div class="container information1">
       <div class="box">
         <h3>About Us</h3>
         <hr color="#ffff00">
@@ -509,7 +584,6 @@
       Copyright © 2020 .All rights reserved by <a href="#">Coder's Gyan</a>.
     </div>
   </footer>
-
 
 
 </body>
